@@ -3,6 +3,7 @@
 - Generate card with different types eg Robots,Cats,Metal Heads and Monster
 - Connected to Robohash API and {JSON} Placeholder.
 - Created using ReactJS and Tachyons.
+- Deployed on github pages for viewing.
 
 ## Available Scripts
 
