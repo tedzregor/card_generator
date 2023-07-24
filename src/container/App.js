@@ -5,6 +5,7 @@ import CardList from '../components/CardList/CardList'
 import SearchField from '../components/SearchField/SearchField'
 import CardType from '../components/CardType/CardType'
 import Scroll from '../components/Scroll/Scroll'
+import ErrorBoundry from '../components/ErrorBoundry';
 
 class App extends Component {
   constructor() {
@@ -44,7 +45,9 @@ class App extends Component {
             <CardType selectCardType={this.selectCardType}/>
         </div>
         <Scroll>
-          <CardList Cards={ filteredCard } CardType={ this.state.CardType }/>
+          <ErrorBoundry>
+            <CardList Cards={ filteredCard } CardType={ this.state.CardType }/>
+          </ErrorBoundry>
         </Scroll>
       </div>
     );
