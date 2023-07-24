@@ -37,7 +37,7 @@ class App extends Component {
       return card.name.toLowerCase().includes( this.state.SearchField )
     })
     return (
-      <div className="App f3">
+      <div className="App">
         <h1>CARD GENERATOR</h1>
         <div className='h4 pa3 ma3'>
             <SearchField searchCard={this.searchCard}/>
